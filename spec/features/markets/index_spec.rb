@@ -36,6 +36,13 @@ RSpec.describe 'Markets index', type: :feature do
         click_link 'More Info'
         expect(current_path).to eq("/markets/322458")
       end
+
+      visit "/markets"
+
+      within "#market-322554" do
+        click_link 'More Info'
+        expect(current_path).to eq("/markets/322554")
+      end
     end
   end
 end

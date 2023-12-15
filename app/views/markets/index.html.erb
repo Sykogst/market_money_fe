@@ -16,6 +16,7 @@
         <td><%= market.name %></td>
         <td><%= market.city %></td>
         <td><%= market.state %></td>
+        <td><%= link_to "More Info", "/markets/#{market.id}" %></td>
       </tr>
     <% end %>
   </tbody>
