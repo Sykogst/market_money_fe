@@ -12,7 +12,7 @@ RSpec.describe 'Markets index', type: :feature do
 
     xit 'They click button "More Info" and are directed to Market show page "/markets/:id"' do
       click_link "More Info"
-      expect(current_path).to eq()
+      expect(current_path).to eq("/markets/#{market_id}")
     end
   end
 end
