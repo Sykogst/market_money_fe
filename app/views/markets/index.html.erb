@@ -1,1 +1,23 @@
-<h1>Market</h1>
+<h1>Markets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @markets_facade.each do |market| %>
+      <tr id="market-<%= market.id %>">
+        <td><%= market.name %></td>
+        <td><%= market.city %></td>
+        <td><%= market.state %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
